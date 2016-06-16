@@ -1,0 +1,133 @@
+@charset "UTF-8";
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans Condensed', Arial;
+  font-style: normal;
+  color: #35475f;
+  font-weight: 300;
+}
+body {
+  text-align: center;
+}
+.container {
+  width: 400px;
+  background: #f5f6f8;
+}
+.header {
+ height: 200px;
+ background: #415065;
+ position: relative;
+}
+.top-content {
+  width: 130px;
+  height: 130px;
+  background: white;
+  padding: 15px 15px 35px;
+  margin: auto;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 11px 22px 0px rgba(50, 50, 50, 0.61);
+}
+.img-src {
+  background: red;
+  height: 100%;
+  margin: 0 0 5px;
+}
+.content {
+  padding: 66px 60px 30px;
+}
+h1 {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 700;
+  color: white;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 10px 0 0;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 700;
+}
+h3 {
+  color: #c0c1c5;
+  font-weight: 300;
+}
+h3, span, p {
+  font-size: 20px;
+  line-height: 22px;
+}
+h2, h3, span {
+  padding: 0 0 10px;
+  margin: 0;
+}
+p {
+  line-height: 28px;
+  text-align: left;
+  padding: 20px 0;
+}
+span {
+  text-transform: uppercase;
+}
+.ion-chevron-left, .ion-ios-heart-outline {
+  font-size: 25px;
+  line-height: 25px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  color: white;
+  position: absolute;
+  top: 10px;
+  cursor: pointer;
+  transition: .5s;
+}
+.ion-ios-star {
+  cursor: pointer;
+  transition: .5s;
+}
+.ion-ios-star:hover {
+  color: yellow;
+  transition: .3s;
+}
+.ion-chevron-left:hover, .ion-ios-heart-outline:hover {
+  color: #ddd;
+  transition: .5s;
+  transform: scale(1.3);
+}
+.ion-chevron-left {
+  left: 20px;
+}
+.ion-ios-heart-outline {
+  right: 20px;
+}
+.box_text {
+  font-size: 22px;
+  line-height: 24px;
+  text-align: left;
+  background: white;
+  padding: 20px;
+}
+.box_text .separador {
+  overflow: hidden;
+}
+.separador span {
+  font-size: 16px;
+  padding: 0 0 5px;
+  color: #c0c1c5;
+}
+.separador span:first-child {
+  color: #ff9219;
+  text-transform: none;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
