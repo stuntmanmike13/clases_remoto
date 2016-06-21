@@ -1,0 +1,115 @@
+@charset "UTF-8";
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  background: #333;
+  box-shadow: 0px 2px 3px rgb(0,0,0,0.5);
+}
+.contenedor {
+  max-width: 1000px;
+  padding: 10px 15px;
+  margin: auto;
+}
+nav ul {
+  float: right;
+  margin-top: 35px;
+}
+nav ul li {
+  display: inline-block;
+  padding: 0 5px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+header {
+  padding: 50px 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cc0000+0,cc0000+100;Red+Flat */
+  background: #cc0000; /* Old browsers */
+  background: -moz-linear-gradient(top,  #cc0000 0%, #cc0000 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #cc0000 0%,#cc0000 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #cc0000 0%,#cc0000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0000', endColorstr='#cc0000',GradientType=0 ); /* IE6-9 */
+}
+header h1 {
+  font-size: 70px;
+  font-weight: bold;
+  color: white;
+  max-width: 600px;
+  margin: 20px 0;
+}
+header h3 {
+  font-size: 20px;
+  color: white;
+  max-width: 500px;
+}
+.productos-contenedor h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 30px 0;
+  font-weight: bold;
+}
+.productos {
+  display: flex;
+}
+.productos article {
+  border: 1px solid #ddd;
+  background: white;
+  padding: 10px;
+  margin: 15px;
+}
+.productos article img {
+  width: 100%;
+}
+.productos article h3 {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+.solo-desktop {
+  display: nonek;
+}
+@media screen and (max-width: 900px) {
+ .productos {
+   flex-direction: column;
+   max-width: 500px;
+ }
+ .contenedor {
+    display: flex;
+    justify-content: center;
+}
+}
+
+@media screen and (max-width: 800px) and (min-width: 700px) {
+  nav {
+    background: blue;
+    xbox-shadow: 0px 2px 3px rgb(0,0,0,0.5);
+  }
+  nav ul {
+    float:none;
+    text-align: center;
+    border-top: 1px #666 solid;
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+  nav .contenedor {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 0px) {
+  header h1 {
+    font-size: 30px;
+  }
+  header h3 {
+    font-size: 30px;
+  }
+  .solo-desktop {
+    display: block;
+  }
+.productos {
+  flex-direction: column;
+ }
+}
