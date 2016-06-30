@@ -1,0 +1,130 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+.contenedor {
+  max-width: 980px;
+  margin: auto; }
+
+header {
+  background: blue;
+  padding: 100px 0; }
+  header h1 {
+    color: white;
+    font-size: 50px;
+    font-family: Arial, helvetica, sans-serif; }
+  header h3 {
+    color: yellow;
+    font-size: 25px;
+    font-family: Arial, helvetica, sans-serif; }
+
+#menu-principal {
+  background: black;
+  padding: 20px 0;
+  overflow: auto; }
+  #menu-principal h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block; }
+  #menu-principal ul {
+    float: right; }
+    #menu-principal ul li {
+      display: inline-block;
+      margin: 0 10px; }
+      #menu-principal ul li a {
+        color: white;
+        text-decoration: none;
+        font-family: Arial, helvetica, sans-serif; }
+
+#productos {
+  background: #EEE;
+  padding: 50px 0; }
+  #productos h2 {
+    text-transform: uppercase;
+    color: blue;
+    text-align: center; }
+  #productos article {
+    width: 33%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: inline-block; }
+    #productos article img {
+      width: 100%; }
+    #productos article h3 {
+      color: red;
+      text-transform: uppercase;
+      font-family: Arial, helvetica, sans-serif; }
+    #productos article p {
+      font-family: Arial, helvetica, sans-serif; }
+    #productos article a {
+      background: green;
+      color: white;
+      text-decoration: none;
+      padding: 5px 20px;
+      border-radius: 3px; }
+
+.boton, .boton-rojo, .boton-azul, .boton-linea, .boton-amarillo {
+  padding: 10px 25px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 2px -2px 3px rgba(0, 0, 0, 0.5);
+  font-family: Arial, helvetica, sans-serif; }
+
+.boton-rojo {
+  background: red;
+  color: white; }
+
+.boton-azul {
+  background: blue;
+  color: white; }
+
+.boton-linea {
+  background: none;
+  border: 1px solid "#333"; }
+
+.boton-amarillo {
+  background: yellow; }
+
+/*# sourceMappingURL=style.css.map */

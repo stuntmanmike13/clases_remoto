@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import "_reset";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Montserrat+Alternates:400,700');
+@import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+//
+//vars
+$color-1: white;
+$red: #AF2B20;
+$color-texto: #333;
+$fuente-principal: Montserrat, Arial, helvetica, sans-serif;
+
+
+a { text-decoration: none; }
+//nesting
+body {
+  background-color: #95A5A6;
+  font-family: $fuente-principal;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #999;
+}
+.tarjeta-presentacion {
+  width: 525px;
+  display: flex;
+  box-shadow: -1px 0px 19px 0px rgba(50, 50, 50, 0.3);
+  border-radius: 4px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  .contenedor {
+    flex: 1;
+    padding: 20px;
+    &:first-child {
+      text-align: center;
+      align-self: center;
+    }
+  }
+  h2 {
+    font-size: 18px;
+    line-height: 24px;
+    color: $red;
+  }
+  h3 {
+    font-size: 10px;
+    line-height: 18px;
+    &:after {
+      content: '';
+    display: block;
+    width: 140px;
+    height: 2px;
+    margin: 0 auto 25px auto;
+    background-color: #ddd;
+    }
+  }
+   h2, h3 {
+    text-align: center;
+    text-transform: uppercase;
+   }
+   p {
+    font-weight: 400;
+    padding: 20px 0;
+    &:first-child {
+      padding-bottom: 0;
+    }
+   }
+   .btn {
+     color: $color-1;
+     text-transform: uppercase;
+     padding: 10px 0;
+     background: #1ABC9C;
+     display: block;
+     border-radius: 6px;
+     text-align: center;
+     border-bottom: 4px solid #15A286;
+     transition: .3s;
+     &:hover {
+       opacity: .8;
+     }
+   }
+   ul {
+     li {
+       background-color: #999;
+       border-radius: 50%;
+       width: 25px;
+       height: 25px;
+       vertical-align: middle;
+       display: inline-block;
+       text-align: center;
+       span {
+         line-height: 25px;
+         &:before {
+           color: $color-1;
+         }
+       }
+     }
+   }
+}

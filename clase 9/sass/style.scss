@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@import "_reset";
+//
+//vars
+$color-principal: red;
+$color-secundario: blue;
+$color-texto: '#333';
+$fuente-principal: Arial, helvetica, sans-serif;
+a { text-decoration: none; }
+//nesting
+body {
+  //background-color: blue;
+}
+.contenedor {
+  max-width: 980px;
+  margin: auto;
+}
+//añidamiento ejemplo
+header {
+   background: $color-secundario;
+   padding: 100px 0;
+   h1 {
+     color: white;
+     font-size: 50px;
+     font-family: $fuente-principal;
+   }
+   h3 {
+     color: yellow;
+     font-size: 25px;
+     font-family: $fuente-principal;
+   }
+}
+#menu-principal {
+  background: black;
+  padding: 20px 0;
+  overflow: auto;
+  h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  ul {
+    float: right;
+    li {
+      display: inline-block;
+      margin: 0 10px;
+      a {
+        color: white;
+        text-decoration: none;
+        font-family: $fuente-principal;
+      }
+    }
+  }
+}
+#productos {
+   background: #EEE;
+   padding: 50px 0;
+   h2 {
+     text-transform: uppercase;
+     color: blue;
+     text-align: center;
+   }
+   article {
+     width: 33%;
+     padding: 20px;
+     box-sizing: border-box;
+     display: inline-block;
+     img {
+       width: 100%;
+     }
+     h3 {
+       color: red;
+       text-transform: uppercase;
+       font-family: $fuente-principal;
+     }
+     p {
+      font-family: $fuente-principal;
+     }
+     a {
+       background: green;
+       color: white;
+       text-decoration: none;
+       padding: 5px 20px;
+       border-radius: 3px;
+     }
+   }
+}
+
+.boton {
+  padding: 10px 25px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 2px -2px 3px rgba(0,0,0,0.5);
+  font-family: $fuente-principal;
+}
+.boton-rojo {
+  @extend .boton;
+  background: red;
+  color: white;
+}
+.boton-azul {
+  @extend .boton;
+  background: blue;
+  color: white;
+}
+.boton-linea {
+  @extend .boton;
+  background: none;
+  border: 1px solid $color-texto;
+}
+.boton-amarillo {
+  @extend .boton;
+  background: yellow;
+}
+//
